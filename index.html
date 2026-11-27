@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Élesítéskor a robots meta és a robots.txt tiltása eltávolítandó. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Edzés, személyi edzés és motiváló közösség Esztergom-Kertvárosban. Ismerd meg a Fit-Lesz edzőtermet, bérletárainkat és nyitvatartásunkat!">
+  <meta name="theme-color" content="#101010">
+  <title>Fit-Lesz Edzőterem – Esztergom-Kertváros</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" as="image" href="assets/optimized/hero.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="opening-hours.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#tartalom" aria-label="Fit-Lesz – kezdőlap"><img src="assets/optimized/fit-lesz-logo-feher.webp" alt="Fit-Lesz Sportegyesület" width="64" height="64"><span>FIT-LESZ<small>SPORTEGYESÜLET</small></span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Fő navigáció"><a href="#rolunk">Rólunk</a><a href="#arak">Árak</a><a href="#edzoink">Edzőink</a><a href="#shop">Shop</a><a href="#kapcsolat">Kapcsolat</a></nav>
+      <div class="opening-status nav-status" data-status aria-live="polite"></div>
+      <button class="menu-toggle" aria-label="Menü megnyitása" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="tartalom">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/optimized/hero.webp" alt="Súlyzós edzés – illusztratív hangulatkép" fetchpriority="high" width="1920" height="960">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow hero-enter">FIT-LESZ SPORTEGYESÜLET <span>·</span> ESZTERGOM-KERTVÁROS</p>
+        <h1 id="hero-title" class="hero-enter">Ahol az edzés<br><em>életformává válik.</em></h1>
+        <p class="hero-copy hero-enter">Akár most kezdenél bele, akár évek óta edzel, a Fit-Leszben megtalálhatod a saját ritmusod. Edzés, fejlődés és egy közösség, ahová jó visszatérni.</p>
+        <div class="hero-actions hero-enter"><a class="button" href="#arak">Jegyek és bérletek</a><a class="button button-outline" href="#rolunk">Ismerj meg minket</a></div>
+      </div>
+      <div class="hero-bottom container"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> A TE HELYED. A TE TEMPÓD.</span><a href="#rolunk" class="scroll-cue">ISMERD MEG A FIT-LESZT <span>↓</span></a></div>
+    </section>
+    <div class="marquee" aria-label="Edzési lehetőségek"><div class="marquee-track"><span>ERŐEDZÉS <b>✦</b> GÉPES EDZÉS <b>✦</b> KARDIÓ <b>✦</b> FUNKCIONÁLIS EDZÉS <b>✦</b> SZEMÉLYI EDZÉS <b>✦</b> </span><span aria-hidden="true">ERŐEDZÉS <b>✦</b> GÉPES EDZÉS <b>✦</b> KARDIÓ <b>✦</b> FUNKCIONÁLIS EDZÉS <b>✦</b> SZEMÉLYI EDZÉS <b>✦</b> </span></div><button class="marquee-pause" aria-label="Futó szöveg szüneteltetése" aria-pressed="false">Ⅱ</button></div>
+    <section class="section about-pricing container" id="rolunk">
+      <div class="about-copy reveal"><p class="eyebrow">ISMERJ MEG MINKET</p><h2>Ez a <em>Fit-Lesz.</em></h2><p class="lead">A Fit-Lesz Esztergom-Kertvárosban várja mindazokat, akik szeretnének aktívabbak, fittebbek vagy erősebbek lenni.</p><p>Legyen szó az első edzésedről, rendszeres erőedzésről vagy új célok eléréséről, nálunk megtalálhatod a hozzád illő edzési lehetőségeket.</p><p>Folyamatosan megújuló környezettel és barátságos közösséggel várunk, hogy az edzés a mindennapjaid természetes részévé váljon.</p><a class="text-link" href="#kapcsolat">Nézd meg, hol találsz minket</a></div>
+      <div class="pricing reveal" id="arak"><div class="pricing-heading"><h3>Jegyek és bérletek</h3><p>Válaszd a hozzád illő lehetőséget!</p></div><div id="price-list"></div><p class="pricing-foot">Találd meg a saját ritmusod.</p></div>
+    </section>
+    <section class="section reasons" aria-labelledby="reasons-title"><div class="container"><div class="section-title reveal"><p class="eyebrow">TÖBB MINT EGY EDZŐTEREM</p><h2 id="reasons-title">Ezért választják<br>a <em>Fit-Leszt.</em></h2></div><div class="reasons-grid"><div class="benefits" id="benefit-list"></div><div class="reviews reveal"><div class="rating"><div><span class="google-mark" aria-label="Google">Google</span><div class="rating-number">4,9<span> / 5</span></div></div><div><div class="stars" aria-label="5 csillag">★★★★★</div><p>25 Google-értékelés alapján</p></div></div><div id="review-list"></div><div class="review-bottom"><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Fit-Lesz+Esztergom" target="_blank" rel="noopener noreferrer">További Google-értékelések</a><small>Tájékoztató pillanatkép, nem élő adat.</small></div></div></div></div></section>
+    <section class="section trainers container" id="edzoink"><div class="section-heading reveal"><div><p class="eyebrow">SZEMÉLYI EDZÉS</p><h2>Nem kell egyedül<br><em>elindulnod.</em></h2></div><p>Akár most ismerkedsz az edzéssel, akár új célokat tűztél ki magad elé, egy személyi edző segíthet megtalálni a hozzád illő utat.</p></div><div class="trainer-grid" id="trainer-list"></div><div class="trainers-bottom"><p class="note">A bemutatott edzői profilok illusztrációk.</p><div><span>Érdekel a személyi edzés?</span><a class="button button-outline" href="#kapcsolat">Érdeklődj nálunk</a></div></div></section>
+    <section class="section shop" id="shop"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">FIT-LESZ SHOP</p><h2>Edzésen <em>innen és túl.</em></h2></div><p>Saját logós Fit-Lesz ruházat edzéshez és a hétköznapokra. Keresd a termékeket a pultnál!</p></div><div class="product-grid" id="product-list"></div><p class="note shop-note">Korábban meghirdetett akciós árak. Az aktuális árakról és készletről érdeklődj a pultnál!</p></div></section>
+    <section class="section contact container" id="kapcsolat"><div class="section-heading reveal"><div><p class="eyebrow">ITT KEZDŐDIK A KÖVETKEZŐ EDZÉSED</p><h2>Találkozunk<br><em>a teremben!</em></h2></div><p>Esztergom-Kertvárosban várunk. Nézz be hozzánk, és kezdd el a következő edzésed!</p></div><div class="contact-grid"><div class="contact-details reveal"><h3>Fit-Lesz Sportegyesület</h3><address><p>2509 Esztergom, Dorogi út 5–7.</p><a data-contact="phone"></a><a data-contact="email"></a></address><a class="button" data-contact="directions" target="_blank" rel="noopener noreferrer">Útvonaltervezés</a><a class="text-link facebook-link" data-contact="facebook" target="_blank" rel="noopener noreferrer">Kövess minket Facebookon!</a></div><div class="hours reveal"><h3>Nyitvatartás</h3><div id="hours-list"></div><div class="opening-status" data-status aria-live="polite"></div><p class="note" id="hours-notice" hidden></p></div><div class="map-wrap reveal"><iframe title="Fit-Lesz – térkép, Esztergom, Dorogi út 5–7." src="https://maps.google.com/maps?q=Fit-Lesz%20Sportegyes%C3%BClet%20Esztergom%20Dorogi%20%C3%BAt%205-7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></section>
+  </main>
+  <footer><div class="container footer-top"><a class="brand" href="#tartalom"><img src="assets/optimized/fit-lesz-logo-feher.webp" alt="Fit-Lesz logó" width="60" height="60"><span>FIT-LESZ<small>SPORTEGYESÜLET</small></span></a><p>Edzés. Fejlődés. Közösség.<br><span>Esztergom-Kertváros</span></p><nav aria-label="Lábléc navigáció"><a href="#rolunk">Rólunk</a><a href="#arak">Árak</a><a href="#edzoink">Edzőink</a><a href="#shop">Shop</a><a href="#kapcsolat">Kapcsolat</a><a data-contact="facebook" target="_blank" rel="noopener noreferrer">Facebook</a></nav></div><div class="container footer-bottom"><span>© <span id="year"></span> Fit-Lesz Sportegyesület</span><span>Weboldal-demó – a bemutatott tartalmak egy része illusztráció.</span></div></footer>
+</body>
+</html>
